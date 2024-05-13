@@ -1,0 +1,690 @@
+﻿<!DOCTYPE html>
+<html lang="zxx">
+    <head>
+       <meta charset="utf-8">
+        <meta name="description" content="Erudex">
+        <meta name="keywords" content="HTML,CSS,JavaScript">
+        <meta name="author" content="HiBootstrap">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+<title>Abriella</title>
+          <link rel="icon" href=@Url.Content("/Content/assets/images/favicon.png") type="image/png" sizes="16x16">
+
+        <!-- bootstrap css -->
+        <link rel="stylesheet" href=@Url.Content("/Content/assets/css/bootstrap.min.css") type="text/css" media="all" />
+        <!-- animate css -->
+        <link rel="stylesheet" href=@Url.Content("/Content/assets/css/animate.min.css") type="text/css" media="all" />
+        <!-- owl carousel css -->
+        <link rel="stylesheet" href=@Url.Content("/Content/assets/css/owl.carousel.min.css")  type="text/css" media="all" />
+        <link rel="stylesheet" href=@Url.Content("/Content/assets/css/owl.theme.default.min.css")  type="text/css") media="all" />
+        <!-- meanmenu css -->
+        <link rel="stylesheet" href=@Url.Content("/Content/assets/css/meanmenu.min.css") type="text/css" media="all" />
+        <!-- magnific popup css -->
+        <link rel="stylesheet" href=@Url.Content("/Content/assets/css/magnific-popup.min.css") type="text/css" media="all" />
+        <!-- boxicons css -->
+        <link rel='stylesheet' href=@Url.Content("/Content/assets/css/icofont.min.css") type="text/css" media="all" />
+        <!-- flaticon css -->
+        <link rel='stylesheet' href=@Url.Content("/Content/assets/css/flaticon.css") type="text/css" media="all" />
+        <!-- nice select css -->
+        <link rel="stylesheet" href=@Url.Content("/Content/assets/css/nice-select.css") type="text/css") media="all" />
+        <!-- style css -->
+        <link rel="stylesheet" href=@Url.Content("/Content/assets/css/style.css") type="text/css") media="all" />
+        <!-- responsive css -->
+        <link rel="stylesheet" href=@Url.Content("/Content/assets/css/responsive.css") type="text/css" media="all" />
+        <!--[if IE]>
+            <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+    </head>
+
+    <body>
+        <!-- Preloader -->
+        <div class="preloader">
+            <div class="preloader-wrapper">
+                <div class="preloader-content">
+                    <div class="blob-1"></div>
+	                <div class="blob-2"></div>
+                </div>
+            </div>
+        </div>
+        <!-- Preloader -->
+        <!-- Navbar -->
+   <div class="fixed-top bg-white">
+            <div class="topbar">
+                <div class="container">
+                    <div class="topbar-inner">
+                        <div class="row justify-content-center justify-content-lg-between">
+                            <div class="topbar-item topbar-left">
+                                <ul class="topbar-list">
+                                    <li>
+                                        <i class="icofont-headphone"></i>
+                                        <a href="tel:00321-654-98">+00 321 654 98</a>
+                                    </li>
+                                    <li>
+                                        <i class="icofont-ui-message"></i>
+                                        <a href="mailto:info@erudex.com">info@erudex.com</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="topbar-item topbar-right">
+                                <ul class="topbar-list">
+                                    <li>
+                                        <i class="icofont-paper-plane"></i>
+                                        <a href='@Url.Action("Contact","Contact")'>Request For Demo</a>
+                                    </li>
+                                    <li class="search-option">
+                                        <i class="icofont-search-1"></i>
+                                        <a href="#" class="search-popup">Search</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="navbar-area sticky-black">
+                <div class="container">
+                    <div class="mobile-nav">
+                        <a href='@Url.Action("HomePage","HomePage")' class="mobile-brand">
+                            <img src=@Url.Content("/Content/assets/images/logo.png") alt="logo" class="logo">
+                        </a>
+                        <div class="navbar-option">
+                            <div class="navbar-option-item">
+                                <button type="button">
+                                    <i class="flaticon-user" ></i>
+                                </button>
+                            </div>
+                            <div class="navbar-option-item side-topbar-option">
+                                <button type="button">
+                                    <i class="flaticon-grid" ></i>
+                                </button>
+                            </div>
+                            <div class="navbar-option-item">
+                                <button type="button" class="search-option">
+                                    <i class="icofont-search-1"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="main-nav">
+                    <div class="container">
+                        <nav class="navbar navbar-expand-md navbar-light">
+                            <a class="navbar-brand" href='@Url.Action("HomePage","HomePage")'>
+                                <img src=@Url.Content("/Content/assets/images/logo.png") alt="logo" class="logo">
+                            </a>
+                            <div class="collapse navbar-collapse mean-menu" id="navbarSupportedContent">
+                                <ul class="navbar-nav mx-auto">
+                                    <li class="nav-item">
+                                        <li class="nav-item  nav-item-1">
+                                                <a href='@Url.Action("HomePage","HomePage")' class="nav-link">Home</a>
+                                            </li>                                           
+                                        
+                                   
+                                    <li class="nav-item">
+                                        <a href='@Url.Action("AboutUs","AboutUs")' class="nav-link ">About Us</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#" class="nav-link dropdown-toggle">Services</a>
+                                        <ul class="dropdown-menu">
+                                           <li class="nav-item">
+                                                <a href='@Url.Action("Services","Service")' class="nav-link">Services</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a href='@Url.Action("SingleServices","Service")' class="nav-link">Single Service</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#" class="nav-link dropdown-toggle active">Pages</a>
+                                        <ul class="dropdown-menu">
+                                            <li class="nav-item">
+                                                <a href='@Url.Action("Pricing","Pages")' class="nav-link">Pricing</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a href='@Url.Action("FAQ","Pages")' class="nav-link">FAQ's</a>
+                                            </li>
+                                             <li class="nav-item">
+                                                <a href='@Url.Action("OurTeam","Pages")' class="nav-link ">Our Team</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a href="#" class="nav-link dropdown-toggle ">Projects</a>
+                                                <ul class="dropdown-menu">
+                                                    <li class="nav-item">
+                                                        <a href='@Url.Action("Projects","Pages")' class="nav-link">Projects</a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a href='@Url.Action("SingleProjects","Pages")' class="nav-link">Single Project</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a href="#" class="nav-link dropdown-toggle">Case Study</a>
+                                                <ul class="dropdown-menu">
+                                                    <li class="nav-item">
+                                                        <a href='@Url.Action("CaseStudy","Pages")' class="nav-link">Case</a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a href='@Url.Action("CaseTwoColumns","Pages")' class="nav-link">Cases Two Columns</a>
+                                                    </li>
+                                                   <li class="nav-item">
+                                                        <a href='@Url.Action("SingleCase","Pages")' class="nav-link">Single Case</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a href='@Url.Action("Testimonial","Pages")' class="nav-link">Testimonial</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a href='@Url.Action("OurClients","Pages")' class="nav-link ">Our Clients</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a href='@Url.Action("Careers","Pages")' class="nav-link ">Careers</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a href="#" class="nav-link dropdown-toggle">Products</a>
+                                                <ul class="dropdown-menu">
+                                                    <li class="nav-item">
+                                                        <a href='@Url.Action("Products","Pages")' class="nav-link ">Products</a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a href='@Url.Action("SingleProducts","Pages")' class="nav-link">Single Products</a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a href='@Url.Action("Cart","Pages")' class="nav-link">Cart</a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a href='@Url.Action("Checkout","Pages")' class="nav-link active">Checkout</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a href="#" class="nav-link dropdown-toggle">Users</a>
+                                                <ul class="dropdown-menu">
+                                                      <li class="nav-item">
+                                                        <a href='@Url.Action("Authentication","Pages")' class="nav-link">Authentication</a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a href='@Url.Action("ForgotPassword","Pages")' class="nav-link">Forget Password</a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a href='@Url.Action("MyAccount","Pages")' class="nav-link">My Account</a>
+                                                    </li>
+                                                     <li class="nav-item">
+                                                        <a href='@Url.Action("MyOrders","Pages")' class="nav-link">My Orders</a>
+                                                    </li>
+                                                     <li class="nav-item">
+                                                        <a href='@Url.Action("MyAddresses","Pages")' class="nav-link">My Addresses</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a href="#" class="nav-link dropdown-toggle">Others</a>
+                                                <ul class="dropdown-menu">
+                                                    <li class="nav-item">
+                                                        <a href='@Url.Action("DemoProducts","Pages")' class="nav-link">Demo Product</a>
+                                                    </li>
+  <li class="nav-item">
+                                                        <a href='@Url.Action("Feedback","Pages")' class="nav-link">Feedback</a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a href='@Url.Action("Termofservice","Pages")' class="nav-link">Terms Of Service</a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a href='@Url.Action("PrivicyPolicy","Pages")' class="nav-link">Privacy Policy</a>
+                                                    </li>
+                                                   <li class="nav-item">
+                                                        <a href='@Url.Action("SearchPage","Pages")' class="nav-link">Search Page</a>
+                                                    </li>
+                                                   <li class="nav-item">
+                                                        <a href='@Url.Action("Error404","Pages")' class="nav-link">404 Error Page</a>
+                                                    </li>
+                                                     <li class="nav-item">
+                                                        <a href='@Url.Action("ComingSoon","Pages")' class="nav-link">Coming Soon</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#" class="nav-link dropdown-toggle">Blogs</a>
+                                        <ul class="dropdown-menu">
+                                            <li class="nav-item">
+                                                <a href='@Url.Action("blogswithoutrightsidebar","Blogs")' class="nav-link">Blogs Grid</a>
+                                            </li>
+  <li class="nav-item">
+                                                <a href='@Url.Action("blogsrightsidebar","Blogs")' class="nav-link">Blogs Right Sidebar</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a href='@Url.Action("SingleBlog","Blogs")' class="nav-link">Single Blog</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item">
+                                       <a href='@Url.Action("Contact","Contact")' class="nav-link">Contact</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="navbar-option">
+                                <div class="navbar-option-item">
+                                    <a href='@Url.Action("Authentication","Pages")' class="btn main-btn">Login Or Register</a>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Navbar -->
+        <!-- Header -->
+        <header class="inner-page-header">
+            <div class="container">
+                <div class="inner-header-content">
+                    <h1>Checkout</h1>
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                          <li class="breadcrumb-item"><a href='@Url.Action("HomePage","HomePage")'>Home</a></li>
+                          <li class="breadcrumb-item active" aria-current="page">Checkout</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <!-- Header -->
+        <!-- Checkout-section -->
+        <div class="checkout-section pt-100 pb-70">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12 col-md-6 col-lg-7 pb-30">
+                        <div class="checkout-item desk-pad-right-30">
+                            <div class="sub-section-title">
+                                <h3 class="sub-section-title-heading">Billing Details</h3>
+                            </div>
+                            <div class="checkout-form">
+                                <form>
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <div class="form-group mb-20">
+                                                <input type="text" name="email" class="form-control" required placeholder="Email Address*">
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12">
+                                            <div class="form-group mb-20">
+                                                <input type="text" name="phone" class="form-control" required placeholder="Phone Number*">
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12">
+                                            <div class="input-checkbox mb-20">
+                                                <input type="checkbox" id="check1">
+                                                <label for="check1">Get alert of product updates & offers</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12 col-lg-6">
+                                            <div class="form-group mb-20">
+                                                <input type="email" name="name" class="form-control" required placeholder="First Name*">
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12 col-lg-6">
+                                            <div class="form-group mb-20">
+                                                <input type="email" name="name" class="form-control" required placeholder="Last Name*">
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12">
+                                            <div class="form-group mb-20">
+                                                <select name="country" class="form-control">
+                                                    <option value="1">Your Country*</option>
+                                                    <option value="2">USA</option>
+                                                    <option value="3">UK</option>
+                                                    <option value="4">Germany</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12">
+                                            <div class="form-group mb-20">
+                                                <input type="email" name="company-name" class="form-control" placeholder="Company Name">
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12">
+                                            <div class="form-group mb-20">
+                                                <input type="email" name="address" class="form-control" required placeholder="Address*">
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12">
+                                            <div class="form-group mb-20">
+                                                <select name="country" class="form-control">
+                                                    <option value="1">Town/City*</option>
+                                                    <option value="2">New York</option>
+                                                    <option value="3">Florida</option>
+                                                    <option value="4">Miami</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12 col-lg-6">
+                                            <div class="form-group mb-20">
+                                                <input type="email" name="state-country" class="form-control" required placeholder="State / Country*">
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12 col-lg-6">
+                                            <div class="form-group mb-20">
+                                                <input type="email" name="postcode-zip" class="form-control" required placeholder="Postcode / Zip*">
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12">
+                                            <div class="input-checkbox mb-20">
+                                                <input type="checkbox" id="check2">
+                                                <label for="check2" class="weight-600">Ship to a different address?</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12">
+                                            <div class="form-group m-0">
+                                                <textarea name="order" class="form-control" rows="12" placeholder="Order Notes*"></textarea>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-5 pb-30">
+                        <div class="checkout-item">
+                            <div class="sub-section-title">
+                                <h3 class="sub-section-title-heading">Your Orders</h3>
+                            </div>
+                            <div class="checkout-details mb-30">
+                                <div class="cart-total-box">
+                                    <div class="cart-total-item">
+                                        <h4 class="checkout-total-title">Product Name</h4>
+                                        <p class="checkout-total-title">Total</p>
+                                    </div>
+                                    <div class="cart-total-item">
+                                        <h4>Magnite Camera</h4>
+                                        <p>$144.79</p>
+                                    </div>
+                                    <div class="cart-total-item">
+                                        <h4>Spy Camera</h4>
+                                        <p>$261.78</p>
+                                    </div>
+                                    <div class="cart-total-item">
+                                        <h4>Security Camera</h4>
+                                        <p>$217.18</p>
+                                    </div>
+                                    <div class="cart-total-item">
+                                        <h4>Smart Camera</h4>
+                                        <p>$316.77</p>
+                                    </div>
+                                    <div class="cart-total-item">
+                                        <h4>CCTV Hidden</h4>
+                                        <p>$115.14</p>
+                                    </div>
+                                    <div class="cart-total-item">
+                                        <h4 class="checkout-total-title">Total</h4>
+                                        <p class="checkout-total-title">$1055.66</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="checkout-payment-area">
+                                <div class="sub-section-title">
+                                    <h3 class="sub-section-title-heading">What's Payment Method</h3>
+                                </div>
+                                <div class="checkout-payment-form">
+                                    <form>
+                                        <div class="input-checkbox mb-20">
+                                            <input type="checkbox" id="check3">
+                                            <label for="check3">Bank Transfer</label>
+                                        </div>
+                                        <div class="input-checkbox mb-20">
+                                            <input type="checkbox" id="check4">
+                                            <label for="check4">Paypal</label>
+                                        </div>
+                                        <div class="input-checkbox mb-20">
+                                            <input type="checkbox" id="check5">
+                                            <label for="check5">Visa</label>
+                                        </div>
+                                        <p>What ipsum dolor sit amet, consectetur adipisicing elit sed do eiusmod tempor incididunt ut labore </p>
+                                        <h3 class="cart-details-title mb-20">Card Details</h3>
+                                        <div class="row">
+                                            <div class="col-12 col-lg-6">
+                                                <div class="form-group mb-20">
+                                                    <input type="text" name="name" class="form-control" required="" placeholder="Name On The Card*">
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-lg-6">
+                                                <div class="form-group mb-20">
+                                                    <input type="text" name="number" class="form-control" required="" placeholder="Card Number*">
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-lg-6">
+                                                <div class="form-group mb-20">
+                                                    <input type="text" name="date" class="form-control" required="" placeholder="Expire Date*">
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-lg-6">
+                                                <div class="form-group mb-20">
+                                                    <input type="text" name="cvn" class="form-control" required="" placeholder="CVN*">
+                                                </div>
+                                            </div>
+                                            <div class="col-12">
+                                                <button class="btn main-btn full-width" type="submit">
+                                                    Make Payment
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Checkout-section -->
+        <!-- Footer -->
+        <footer class="bg-off-white footer">
+            <div class="footer-shapes">
+                <div class="footer-shape">
+                    <img src=@Url.Content("/Content/assets/images/shape-1.png") alt="shape">
+                </div>
+                <div class="footer-shape footer-round-shape">
+                    <img src=@Url.Content("/Content/assets/images/shape-2.png") alt="shape">
+                </div>
+            </div>
+                      <div class="footer-upper pt-100 pb-80 position-relative">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-12 col-md-6 col-lg-3">
+                            <div class="footer-content-item">
+                                <div class="footer-logo">
+                                    <a href='@Url.Action("HomePage","HomePage")'><img src=@Url.Content("/Content/assets/images/logo.png") alt="logo"></a>
+                                </div>
+                                <div class="footer-details">
+                                    <p>Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate.</p>
+                                    <ul class="social-list social-list-btn">
+                                        <li>
+                                            <a href="https://www.facebook.com/" target="_blank"><i class="icofont-facebook"></i></a>
+                                        </li>
+                                        <li>
+                                            <a href="https://twitter.com/" target="_blank"><i class="icofont-twitter"></i></a>
+                                        </li>
+                                        <li>
+                                            <a href="https://www.instagram.com/" target="_blank"><i class="icofont-instagram"></i></a>
+                                        </li>
+                                        <li>
+                                            <a href="https://www.pinterest.com/" target="_blank"><i class="icofont-pinterest"></i></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-6 col-lg-3">
+                            <div class="footer-content-list footer-content-item desk-pad-left-70">
+                                <div class="footer-content-title">
+                                    <h3>Useful Links</h3>
+                                </div>
+                                <ul class="footer-details footer-list">
+                                    <li><a href='@Url.Action("AboutUs","AboutUs")'>About Us</a></li>
+                                    <li><a href='@Url.Action("blogsrightsidebar","Blogs")'>News & Blogs</a></li>
+                                    <li><a href='@Url.Action("Services","Service")'>Services</a></li>
+                                    <li><a href='@Url.Action("Products","Pages")'>Products</a></li>
+                                    <li><a href='@Url.Action("Pricing","Pages")'>Our Pricing</a></li>
+                                    <li><a href='@Url.Action("Contact","Contact")'>Contact</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-6 col-lg-3">
+                            <div class="footer-content-list footer-content-item desk-pad-left-70">
+                                <div class="footer-content-title">
+                                    <h3>Services</h3>
+                                </div>
+                                <ul class="footer-details footer-list">
+                                    <li><a href='@Url.Action("SingleServices","Service")'>Robotic Automation</a></li>
+                                    <li><a href='@Url.Action("SingleServices","Service")'>Predictive Analytic</a></li>
+                                    <li><a href='@Url.Action("SingleServices","Service")'>Deep Learning</a></li>
+                                    <li><a href='@Url.Action("SingleServices","Service")'>Statistic Modeling</a></li>
+                                    <li><a href='@Url.Action("SingleServices","Service")'>Data Mining</a></li>
+                                    <li><a href='@Url.Action("SingleServices","Service")'>Security & Surveillance</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-6 col-lg-3">
+                            <div class="footer-content-list footer-content-item desk-pad-left-70">
+                                <div class="footer-content-title">
+                                    <h3>Contact</h3>
+                                </div>
+                                <div class="footer-details footer-address">
+                                    <div class="footer-address-item">
+                                        <div class="footer-address-text">
+                                            <h4>Phone:</h4>
+                                            <p><a href="tel:001-987-654-432">(+1) 987 654 432</a></p>
+                                        </div>
+                                    </div>
+                                    <div class="footer-address-item">
+                                        <div class="footer-address-text">
+                                            <h4>Email:</h4>
+                                            <p><a href="mailto:info@erudex.com">info@erudex.com</a></p>
+                                        </div>
+                                    </div>
+                                    <div class="footer-address-item">
+                                        <div class="footer-address-text">
+                                            <h4>Address:</h4>
+                                            <p>214, Queens 4th cross, NY</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-lower bg-blue position-relative">
+                <div class="container">
+                    <div class="footer-copyright-text footer-copyright-text-white">
+                        <p>Copyright ©2021 Erudex. Designed & Developed By <a href="https://envytheme.com/" target="_blank">EnvyTheme</a></p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Footer -->
+
+        <!-- Scroll-top -->
+        <div class="scroll-top" id="scrolltop">
+            <div class="scroll-top-inner">
+                <i class="icofont-long-arrow-up"></i>
+            </div>
+        </div>
+        <!-- Scroll-top -->
+
+        <!-- Topbar-side-modal -->
+        <div class="side-modal-wrapper">
+            <div class="side-modal">
+                <div class="side-modal-header">
+                    <div class="side-modal-logo">
+                        <a href="index.html"><img src=@Url.Content("/Content/assets/images/logo.png") alt="logo"></a>
+                    </div>
+                    <div class="side-modal-close">
+                        <i class="icofont-close"></i>
+                    </div>
+                </div>
+                <div class="side-modal-body">
+                    <div class="sidebar-info-content">
+                        <h3>Contact Us</h3>
+                        <div class="sidebar-info-list">
+                            <div class="sidebar-info-list-item">
+                                <i class="icofont-headphone"></i>
+                                <a href="tel:00321-654-98">+00 321 654 98</a>
+                            </div>
+                            <div class="sidebar-info-list-item">
+                                <i class="icofont-ui-message"></i>
+                                <a href="mailto:info@erudex.com">info@erudex.com</a>
+                            </div>
+                            <div class="sidebar-info-list-item">
+                                <i class="icofont-paper-plane"></i>
+                                <a href="contact.html">Request For Demo</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sidebar-info-content">
+                        <h3>Follow Us</h3>
+                        <ul class="social-list">
+                            <li>
+                                <a href="https://www.facebook.com/" target="_blank"><i class="icofont-facebook"></i></a>
+                            </li>
+                            <li>
+                                <a href="https://twitter.com/" target="_blank"><i class="icofont-twitter"></i></a>
+                            </li>
+                            <li>
+                                <a href="https://www.instagram.com/" target="_blank"><i class="icofont-instagram"></i></a>
+                            </li>
+                            <li>
+                                <a href="https://www.pinterest.com/" target="_blank"><i class="icofont-pinterest"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Topbar-side-modal -->
+
+        <!-- Search-overlay -->
+        <div class="search-overlay">
+            <div class="search-close">
+                <i class="icofont-close"></i>
+            </div>
+            <div class="search-form-area">
+                <div class="search-area-logo">
+                    <a href="index.html">
+                        <img src=@Url.Content("/Content/assets/images/logo-white.png") alt="logo">
+                    </a>
+                </div>
+                <form>
+                    <div class="form-group search-form-group">
+                        <input type="text" placeholder="Search..." class="form-control" autofocus="autofocus">
+                        <button>
+                            <i class="icofont-search-1"></i>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <!-- Search-overlay -->
+
+
+        <!-- essential js -->
+        <script src=@Url.Content("/Content/assets/js/jquery.min.js")></script>
+        <script src=@Url.Content("/Content/assets/js/bootstrap.bundle.min.js")></script>
+        <!-- magnific popup js -->
+        <script src=@Url.Content("/Content/assets/js/jquery.magnific-popup.min.js")></script>
+        <!-- owl carousel js -->
+        <script src=@Url.Content("/Content/assets/js/owl.carousel.min.js")></script>
+        <!-- nice select js -->
+        <script src=@Url.Content("/Content/assets/js/jquery.nice-select.min.js")></script>
+        <!-- form ajazchimp js -->
+        <script src=@Url.Content("/Content/assets/js/jquery.ajaxchimp.min.js")></script>
+        <!-- form validator js  -->
+        <script src=@Url.Content("/Content/assets/js/form-validator.min.js")></script>
+        <!-- contact form js -->
+        <script src=@Url.Content("/Content/assets/js/contact-form-script.js")></script>
+        <!-- meanmenu js -->
+        <script src=@Url.Content("/Content/assets/js/jquery.meanmenu.min.js")></script>
+        <!-- main js -->
+        <script src=@Url.Content("/Content/assets/js/script.js")></script>
+    </body>
+</html>

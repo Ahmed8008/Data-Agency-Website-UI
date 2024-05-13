@@ -1,0 +1,626 @@
+﻿@*<!DOCTYPE html>*@
+<html lang="zxx">
+   <head>
+        <meta charset="utf-8">
+        <meta name="description" content="Erudex">
+        <meta name="keywords" content="HTML,CSS,JavaScript">
+        <meta name="author" content="HiBootstrap">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+<title>Abriella</title>
+        <link rel="icon" href=@Url.Content("/Content/assets/images/favicon.png") type="image/png" sizes="16x16">
+
+        <!-- bootstrap css -->
+        <link rel="stylesheet" href=@Url.Content("/Content/assets/css/bootstrap.min.css") type="text/css" media="all" />
+        <!-- animate css -->
+        <link rel="stylesheet" href=@Url.Content("/Content/assets/css/animate.min.css") type="text/css" media="all" />
+        <!-- owl carousel css -->
+        <link rel="stylesheet" href=@Url.Content("/Content/assets/css/owl.carousel.min.css")  type="text/css" media="all" />
+        <link rel="stylesheet" href=@Url.Content("/Content/assets/css/owl.theme.default.min.css")  type="text/css") media="all" />
+        <!-- meanmenu css -->
+        <link rel="stylesheet" href=@Url.Content("/Content/assets/css/meanmenu.min.css") type="text/css" media="all" />
+        <!-- magnific popup css -->
+        <link rel="stylesheet" href=@Url.Content("/Content/assets/css/magnific-popup.min.css") type="text/css" media="all" />
+        <!-- boxicons css -->
+        <link rel='stylesheet' href=@Url.Content("/Content/assets/css/icofont.min.css") type="text/css" media="all" />
+        <!-- flaticon css -->
+        <link rel='stylesheet' href=@Url.Content("/Content/assets/css/flaticon.css") type="text/css" media="all" />
+        <!-- nice select css -->
+        <link rel="stylesheet" href=@Url.Content("/Content/assets/css/nice-select.css") type="text/css") media="all" />
+        <!-- style css -->
+        <link rel="stylesheet" href=@Url.Content("/Content/assets/css/style.css") type="text/css") media="all" />
+        <!-- responsive css -->
+        <link rel="stylesheet" href=@Url.Content("/Content/assets/css/responsive.css") type="text/css" media="all" />
+        <!--[if IE]>
+            <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+    </head>
+
+    <body>
+        <!-- Preloader -->
+        <div class="preloader">
+            <div class="preloader-wrapper">
+                <div class="preloader-content">
+                    <div class="blob-1"></div>
+	                <div class="blob-2"></div>
+                </div>
+            </div>
+        </div>
+        <!-- Preloader -->
+        <!-- Navbar -->
+        <div class="fixed-top bg-white">
+            <div class="topbar">
+                <div class="container">
+                    <div class="topbar-inner">
+                        <div class="row justify-content-center justify-content-lg-between">
+                            <div class="topbar-item topbar-left">
+                                <ul class="topbar-list">
+                                    <li>
+                                        <i class="icofont-headphone"></i>
+                                        <a href="tel:00321-654-98">+00 321 654 98</a>
+                                    </li>
+                                    <li>
+                                        <i class="icofont-ui-message"></i>
+                                        <a href="mailto:info@erudex.com">info@erudex.com</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="topbar-item topbar-right">
+                                <ul class="topbar-list">
+                                    <li>
+                                        <i class="icofont-paper-plane"></i>
+                                        <a href='@Url.Action("Contact","Contact")'>Request For Demo</a>
+                                    </li>
+                                    <li class="search-option">
+                                        <i class="icofont-search-1"></i>
+                                        <a href="#" class="search-popup">Search</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="navbar-area sticky-black">
+                <div class="container">
+                    <div class="mobile-nav">
+                        <a href='@Url.Action("HomePage","HomePage")' class="mobile-brand">
+                            <img src=@Url.Content("/Content/assets/images/logo.png") alt="logo" class="logo">
+                        </a>
+                        <div class="navbar-option">
+                            <div class="navbar-option-item">
+                                <button type="button">
+                                    <i class="flaticon-user" ></i>
+                                </button>
+                            </div>
+                            <div class="navbar-option-item side-topbar-option">
+                                <button type="button">
+                                    <i class="flaticon-grid" ></i>
+                                </button>
+                            </div>
+                            <div class="navbar-option-item">
+                                <button type="button" class="search-option">
+                                    <i class="icofont-search-1"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="main-nav">
+                    <div class="container">
+                        <nav class="navbar navbar-expand-md navbar-light">
+                            <a class="navbar-brand" href='@Url.Action("HomePage","HomePage")'>
+                                <img src=@Url.Content("/Content/assets/images/logo.png") alt="logo" class="logo">
+                            </a>
+                            <div class="collapse navbar-collapse mean-menu" id="navbarSupportedContent">
+                                <ul class="navbar-nav mx-auto">
+                                   <li class="nav-item  nav-item-1">
+                                                <a href='@Url.Action("HomePage","HomePage")' class="nav-link">Home</a>
+                                            </li>
+                                           
+                                        
+                                   
+                                    <li class="nav-item">
+                                        <a href='@Url.Action("AboutUs","AboutUs")' class="nav-link ">About Us</a>
+                                    </li>
+                                    
+                                    <li class="nav-item">
+                                        <a href="#" class="nav-link dropdown-toggle active">Services</a>
+                                        <ul class="dropdown-menu">
+                                            <li class="nav-item">
+                                                <a href='@Url.Action("Services","Service")' class="nav-link">Services</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a href='@Url.Action("SingleServices","Service")' class="nav-link active">Single Service</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#" class="nav-link dropdown-toggle">Pages</a>
+                                        <ul class="dropdown-menu">
+                                           <li class="nav-item">
+                                                <a href='@Url.Action("Pricing","Pages")' class="nav-link ">Pricing</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a href='@Url.Action("FAQ","Pages")' class="nav-link ">FAQ's</a>
+                                            </li>
+                                             <li class="nav-item">
+                                                <a href='@Url.Action("OurTeam","Pages")' class="nav-link ">Our Team</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a href="#" class="nav-link dropdown-toggle">Projects</a>
+                                                <ul class="dropdown-menu">
+                                                    <li class="nav-item">
+                                                        <a href='@Url.Action("Projects","Pages")' class="nav-link">Projects</a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a href='@Url.Action("SingleProjects","Pages")' class="nav-link">Single Project</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a href="#" class="nav-link dropdown-toggle">Case Study</a>
+                                                <ul class="dropdown-menu">
+                                                    <li class="nav-item">
+                                                        <a href='@Url.Action("CaseStudy","Pages")' class="nav-link">Case</a>
+                                                    </li>
+                                                   <li class="nav-item">
+                                                        <a href='@Url.Action("CaseTwoColumns","Pages")' class="nav-link">Cases Two Columns</a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a href='@Url.Action("SingleCase","Pages")' class="nav-link">Single Case</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a href='@Url.Action("Testimonial","Pages")' class="nav-link">Testimonial</a>
+                                            </li>
+                                             <li class="nav-item">
+                                                <a href='@Url.Action("OurClients","Pages")' class="nav-link ">Our Clients</a>
+                                            </li>
+                                             <li class="nav-item">
+                                                <a href='@Url.Action("Careers","Pages")' class="nav-link ">Careers</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a href="#" class="nav-link dropdown-toggle">Products</a>
+                                                <ul class="dropdown-menu">
+                                                    <li class="nav-item">
+                                                        <a href='@Url.Action("Products","Pages")' class="nav-link">Products</a>
+                                                    </li>
+                                                      <li class="nav-item">
+                                                        <a href='@Url.Action("SingleProducts","Pages")' class="nav-link ">Single Products</a>
+                                                    </li>
+                                                   <li class="nav-item">
+                                                        <a href='@Url.Action("Cart","Pages")' class="nav-link">Cart</a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a href='@Url.Action("Checkout","Pages")' class="nav-link">Checkout</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a href="#" class="nav-link dropdown-toggle">Users</a>
+                                                <ul class="dropdown-menu">
+  <li class="nav-item">
+                                                        <a href='@Url.Action("Authentication","Pages")' class="nav-link">Authentication</a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a href='@Url.Action("ForgotPassword","Pages")' class="nav-link">Forget Password</a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a href='@Url.Action("MyAccount","Pages")' class="nav-link">My Account</a>
+                                                    </li>
+                                                  <li class="nav-item">
+                                                        <a href='@Url.Action("MyOrders","Pages")' class="nav-link">My Orders</a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a href='@Url.Action("MyAddresses","Pages")' class="nav-link">My Addresses</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a href="#" class="nav-link dropdown-toggle">Others</a>
+                                                <ul class="dropdown-menu">
+                                                    <li class="nav-item">
+                                                        <a href='@Url.Action("DemoProducts","Pages")' class="nav-link">Demo Product</a>
+                                                    </li>
+                                                     <li class="nav-item">
+                                                        <a href='@Url.Action("Feedback","Pages")' class="nav-link">Feedback</a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a href='@Url.Action("Termofservice","Pages")' class="nav-link">Terms Of Service</a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a href='@Url.Action("PrivicyPolicy","Pages")' class="nav-link">Privacy Policy</a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a href='@Url.Action("SearchPage","Pages")' class="nav-link">Search Page</a>
+                                                    </li>
+                                                     <li class="nav-item">
+                                                        <a href='@Url.Action("Error404","Pages")' class="nav-link">404 Error Page</a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a href='@Url.Action("ComingSoon","Pages")' class="nav-link">Coming Soon</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#" class="nav-link dropdown-toggle">Blogs</a>
+                                        <ul class="dropdown-menu">
+                                             <li class="nav-item">
+                                                <a href='@Url.Action("blogswithoutrightsidebar","Blogs")' class="nav-link">Blogs Grid</a>
+                                            </li>
+  <li class="nav-item">
+                                                <a href='@Url.Action("blogsrightsidebar","Blogs")' class="nav-link">Blogs Right Sidebar</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a href='@Url.Action("SingleBlog","Blogs")' class="nav-link">Single Blog</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                   <li class="nav-item">
+                                       <a href='@Url.Action("Contact","Contact")' class="nav-link">Contact</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="navbar-option">
+                                <div class="navbar-option-item">
+                                    <a href='@Url.Action("Authentication","Pages")' class="btn main-btn">Login Or Register</a>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Navbar -->
+        <!-- Header -->
+        <header class="inner-page-header">
+            <div class="container">
+                <div class="inner-header-content">
+                    <h1>Single Service</h1>
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                          <li class="breadcrumb-item"><a href='@Url.Action("HomePage","HomePage")'>Home</a></li>
+                          <li class="breadcrumb-item"><a href='@Url.Action("Services","Service")'>Services</a></li>
+                          <li class="breadcrumb-item active" aria-current="page">Single Service</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <!-- Header -->
+        <!-- Service-section -->
+        <section class="service-section pt-100 pb-70">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 pb-30">
+                        <div class="forum-details desk-pad-right-40">
+                            <img src=@Url.Content("/Content/assets/images/services/servicedetails.jpg") alt="service">
+                            <h2>Robotic Automation</h2>
+                            <p>Lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulp theutate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit. Class thaptent taciti sociosqu ad litora torquent per. conubia nostra, per inceptos himenaeos.</p>
+                            <ul>
+                                <li>Advance advisory team</li>
+                                <li>Advance quality experts</li>
+                                <li>There are many variations of passages.</li>
+                                <li>High-Quality results</li>
+                            </ul>
+                            <p>Lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulp theutate cursus a sit amet mauris.</p>
+                            <div class="row">
+                                <div class="col-12 col-sm-6">
+                                    <img src=@Url.Content("/Content/assets/images/services/servicedetails-1.jpg") alt="service">
+                                </div>
+                                <div class="col-12 col-sm-6">
+                                    <img src=@Url.Content("/Content/assets/images/services/servicedetails-2.jpg") alt="service">
+                                </div>
+                            </div>
+                            <h3>Advanced Analytics Strategies</h3>
+                            <p>Lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulp theutate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit. Class thaptent taciti sociosqu ad litora torquent per. conubia nostra, per inceptos himenaeos.</p>
+                            <p>Lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulp theutate cursus a sit amet mauris.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 pb-30">
+                        <div class="sidebar-item sidebar-bg details-sidebar-search">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Search">
+                                <button type="submit">
+                                    <i class="flaticon-search"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="sidebar-item sidebar-bg">
+                            <h3>Services</h3>
+                            <ul class="sidebar-list">
+                                <li><a href='@Url.Action("SingleServices","Service")' class="">Robotic Automation</a></li>
+                                <li><a href='@Url.Action("SingleServices","Service")'>Predictive Analytics</a></li>
+                                <li><a href='@Url.Action("SingleServices","Service")'>Deep Learning</a></li>
+                                <li><a href='@Url.Action("SingleServices","Service")'>Data Mining</a></li>
+                                <li><a href='@Url.Action("SingleServices","Service")'>Statistical Modeling</a></li>
+                                <li><a href='@Url.Action("SingleServices","Service")'>Security & Surveillance</a></li>
+                            </ul>
+                        </div>
+                        <div class="sidebar-item sidebar-bg bg-blue-dark">
+                            <div class="sidebar-author">
+                                <p>“Proin gravida nibh vel velit auctor aliquet nean sollicitudin.Proin gravida nibh vel velit auctor aliquet Aenean sollicitudin.Proin vel velit auctor aliquet Aenean sollicitudin.”</p>
+                                <div class="author-info">
+                                    <img src=@Url.Content("/Content/assets/images/author1.jpg") alt="author">
+                                    <div class="author-info-details">
+                                        <h3>Jonson Mandel</h3>
+                                        <p>Los Angel</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sidebar-item">
+                            <h3>Recent Post</h3>
+                            <div class="sidebar-recent-post">
+                                <div class="sidebar-recent-post-item">
+                                    <a href='@Url.Action("SingleServices","Service")'>
+                                        <img src=@Url.Content("/Content/assets/images/services/service4.png") alt="service">
+                                        <div class="recent-post-details">
+                                            <h3>Is Machine Learning Right Going On Good Way</h3>
+                                            <ul class="post-entry">
+                                                <li>January 25, 2021</li>
+                                            </ul>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="sidebar-recent-post-item">
+                                    <a href='@Url.Action("SingleServices","Service")'>
+                                        <img src=@Url.Content("/Content/assets/images/services/service5.png") alt="service">
+                                        <div class="recent-post-details">
+                                            <h3>The Current State Of Artificial Intelligence Infographic</h3>
+                                            <ul class="post-entry">
+                                                <li>January 24, 2021</li>
+                                            </ul>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="sidebar-recent-post-item">
+                                    <a href='@Url.Action("SingleServices","Service")'>
+                                        <img src=@Url.Content("/Content/assets/images/services/service6.png") alt="service">
+                                        <div class="recent-post-details">
+                                            <h3>Our Company As A Global Leader In Big Data</h3>
+                                            <ul class="post-entry">
+                                                <li>January 23, 2021</li>
+                                            </ul>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Service-section -->
+        <!-- Newsletter-section -->
+        <section class="newsletter-section pt-min-100 pb-100 page-bg page-bg-2 page-bg-overlay">
+            <div class="container position-relative">
+                <div class="section-title section-title-white">
+                    <h2>Subscribe For Newsletter</h2>
+                    <p>Subscribe to our newsletter & stay updated</p>
+                </div>
+                <form class="newsletter-form">
+                    <div class="form-group m-0 newsletter-form">
+                        <input type="text" name="EMAIL" id="emails" class="form-control" placeholder="Enter Address*" required>
+                        <button class="btn main-btn" type="submit">Subscribe</button>
+                    </div>
+                    <div id="validator-newsletter" class="form-result"></div>
+                </form>
+            </div>
+        </section>
+        <!-- Newsletter-section -->
+        <!-- Footer -->
+        <footer class="bg-off-white footer">
+            <div class="footer-shapes">
+                <div class="footer-shape">
+                    <img src=@Url.Content("/Content/assets/images/shape-1.png") alt="shape">
+                </div>
+                <div class="footer-shape footer-round-shape">
+                    <img src=@Url.Content("/Content/assets/images/shape-2.png") alt="shape">
+                </div>
+            </div>
+                       <div class="footer-upper pt-100 pb-80 position-relative">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-12 col-md-6 col-lg-3">
+                            <div class="footer-content-item">
+                                <div class="footer-logo">
+                                    <a href='@Url.Action("HomePage","HomePage")'><img src=@Url.Content("/Content/assets/images/logo.png") alt="logo"></a>
+                                </div>
+                                <div class="footer-details">
+                                    <p>Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate.</p>
+                                    <ul class="social-list social-list-btn">
+                                        <li>
+                                            <a href="https://www.facebook.com/" target="_blank"><i class="icofont-facebook"></i></a>
+                                        </li>
+                                        <li>
+                                            <a href="https://twitter.com/" target="_blank"><i class="icofont-twitter"></i></a>
+                                        </li>
+                                        <li>
+                                            <a href="https://www.instagram.com/" target="_blank"><i class="icofont-instagram"></i></a>
+                                        </li>
+                                        <li>
+                                            <a href="https://www.pinterest.com/" target="_blank"><i class="icofont-pinterest"></i></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-6 col-lg-3">
+                            <div class="footer-content-list footer-content-item desk-pad-left-70">
+                                <div class="footer-content-title">
+                                    <h3>Useful Links</h3>
+                                </div>
+                                <ul class="footer-details footer-list">
+                                    <li><a href='@Url.Action("AboutUs","AboutUs")'>About Us</a></li>
+                                    <li><a href='@Url.Action("blogsrightsidebar","Blogs")'>News & Blogs</a></li>
+                                    <li><a href='@Url.Action("Services","Service")'>Services</a></li>
+                                    <li><a href='@Url.Action("Products","Pages")'>Products</a></li>
+                                    <li><a href='@Url.Action("Pricing","Pages")'>Our Pricing</a></li>
+                                    <li><a href='@Url.Action("Contact","Contact")'>Contact</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-6 col-lg-3">
+                            <div class="footer-content-list footer-content-item desk-pad-left-70">
+                                <div class="footer-content-title">
+                                    <h3>Services</h3>
+                                </div>
+                                <ul class="footer-details footer-list">
+                                    <li><a href='@Url.Action("SingleServices","Service")'>Robotic Automation</a></li>
+                                    <li><a href='@Url.Action("SingleServices","Service")'>Predictive Analytic</a></li>
+                                    <li><a href='@Url.Action("SingleServices","Service")'>Deep Learning</a></li>
+                                    <li><a href='@Url.Action("SingleServices","Service")'>Statistic Modeling</a></li>
+                                    <li><a href='@Url.Action("SingleServices","Service")'>Data Mining</a></li>
+                                    <li><a href='@Url.Action("SingleServices","Service")'>Security & Surveillance</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-6 col-lg-3">
+                            <div class="footer-content-list footer-content-item desk-pad-left-70">
+                                <div class="footer-content-title">
+                                    <h3>Contact</h3>
+                                </div>
+                                <div class="footer-details footer-address">
+                                    <div class="footer-address-item">
+                                        <div class="footer-address-text">
+                                            <h4>Phone:</h4>
+                                            <p><a href="tel:001-987-654-432">(+1) 987 654 432</a></p>
+                                        </div>
+                                    </div>
+                                    <div class="footer-address-item">
+                                        <div class="footer-address-text">
+                                            <h4>Email:</h4>
+                                            <p><a href="mailto:info@erudex.com">info@erudex.com</a></p>
+                                        </div>
+                                    </div>
+                                    <div class="footer-address-item">
+                                        <div class="footer-address-text">
+                                            <h4>Address:</h4>
+                                            <p>214, Queens 4th cross, NY</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-lower bg-blue position-relative">
+                <div class="container">
+                    <div class="footer-copyright-text footer-copyright-text-white">
+                        <p>Copyright ©2021 Erudex. Designed & Developed By <a href="https://envytheme.com/" target="_blank">EnvyTheme</a></p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Footer -->
+
+        <!-- Scroll-top -->
+        <div class="scroll-top" id="scrolltop">
+            <div class="scroll-top-inner">
+                <i class="icofont-long-arrow-up"></i>
+            </div>
+        </div>
+        <!-- Scroll-top -->
+
+        <!-- Topbar-side-modal -->
+        <div class="side-modal-wrapper">
+            <div class="side-modal">
+                <div class="side-modal-header">
+                    <div class="side-modal-logo">
+                        <a href="index.html"><img src=@Url.Content("/Content/assets/images/logo.png") alt="logo"></a>
+                    </div>
+                    <div class="side-modal-close">
+                        <i class="icofont-close"></i>
+                    </div>
+                </div>
+                <div class="side-modal-body">
+                    <div class="sidebar-info-content">
+                        <h3>Contact Us</h3>
+                        <div class="sidebar-info-list">
+                            <div class="sidebar-info-list-item">
+                                <i class="icofont-headphone"></i>
+                                <a href="tel:00321-654-98">+00 321 654 98</a>
+                            </div>
+                            <div class="sidebar-info-list-item">
+                                <i class="icofont-ui-message"></i>
+                                <a href="mailto:info@erudex.com">info@erudex.com</a>
+                            </div>
+                            <div class="sidebar-info-list-item">
+                                <i class="icofont-paper-plane"></i>
+                                <a href="contact.html">Request For Demo</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sidebar-info-content">
+                        <h3>Follow Us</h3>
+                        <ul class="social-list">
+                            <li>
+                                <a href="https://www.facebook.com/" target="_blank"><i class="icofont-facebook"></i></a>
+                            </li>
+                            <li>
+                                <a href="https://twitter.com/" target="_blank"><i class="icofont-twitter"></i></a>
+                            </li>
+                            <li>
+                                <a href="https://www.instagram.com/" target="_blank"><i class="icofont-instagram"></i></a>
+                            </li>
+                            <li>
+                                <a href="https://www.pinterest.com/" target="_blank"><i class="icofont-pinterest"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Topbar-side-modal -->
+
+        <!-- Search-overlay -->
+        <div class="search-overlay">
+            <div class="search-close">
+                <i class="icofont-close"></i>
+            </div>
+            <div class="search-form-area">
+                <div class="search-area-logo">
+                    <a href="index.html">
+                        <img src=@Url.Content("/Content/assets/images/logo-white.png") alt="logo">
+                    </a>
+                </div>
+                <form>
+                    <div class="form-group search-form-group">
+                        <input type="text" placeholder="Search..." class="form-control" autofocus="autofocus">
+                        <button>
+                            <i class="icofont-search-1"></i>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <!-- Search-overlay -->
+
+
+        <!-- essential js -->
+        <script src=@Url.Content("/Content/assets/js/jquery.min.js")></script>
+        <script src=@Url.Content("/Content/assets/js/bootstrap.bundle.min.js")></script>
+        <!-- magnific popup js -->
+        <script src=@Url.Content("/Content/assets/js/jquery.magnific-popup.min.js")></script>
+        <!-- owl carousel js -->
+        <script src=@Url.Content("/Content/assets/js/owl.carousel.min.js")></script>
+        <!-- nice select js -->
+        <script src=@Url.Content("/Content/assets/js/jquery.nice-select.min.js")></script>
+        <!-- form ajazchimp js -->
+        <script src=@Url.Content("/Content/assets/js/jquery.ajaxchimp.min.js")></script>
+        <!-- form validator js  -->
+        <script src=@Url.Content("/Content/assets/js/form-validator.min.js")></script>
+        <!-- contact form js -->
+        <script src=@Url.Content("/Content/assets/js/contact-form-script.js")></script>
+        <!-- meanmenu js -->
+        <script src=@Url.Content("/Content/assets/js/jquery.meanmenu.min.js")></script>
+        <!-- main js -->
+        <script src=@Url.Content("/Content/assets/js/script.js")></script>
+    </body>
+</html>

@@ -1,0 +1,653 @@
+﻿<!DOCTYPE html>
+<html lang="zxx">
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="Erudex">
+        <meta name="keywords" content="HTML,CSS,JavaScript">
+        <meta name="author" content="HiBootstrap">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+        <title>Abriella</title>
+        <link rel="icon" href=@Url.Content("/Content/assets/images/favicon.png") type="image/png" sizes="16x16">
+
+        <!-- bootstrap css -->
+        <link rel="stylesheet" href=@Url.Content("/Content/assets/css/bootstrap.min.css") type="text/css" media="all" />
+        <!-- animate css -->
+        <link rel="stylesheet" href=@Url.Content("/Content/assets/css/animate.min.css") type="text/css" media="all" />
+        <!-- owl carousel css -->
+        <link rel="stylesheet" href=@Url.Content("/Content/assets/css/owl.carousel.min.css")  type="text/css" media="all" />
+        <link rel="stylesheet" href=@Url.Content("/Content/assets/css/owl.theme.default.min.css")  type="text/css") media="all" />
+        <!-- meanmenu css -->
+        <link rel="stylesheet" href=@Url.Content("/Content/assets/css/meanmenu.min.css") type="text/css" media="all" />
+        <!-- magnific popup css -->
+        <link rel="stylesheet" href=@Url.Content("/Content/assets/css/magnific-popup.min.css") type="text/css" media="all" />
+        <!-- boxicons css -->
+        <link rel='stylesheet' href=@Url.Content("/Content/assets/css/icofont.min.css") type="text/css" media="all" />
+        <!-- flaticon css -->
+        <link rel='stylesheet' href=@Url.Content("/Content/assets/css/flaticon.css") type="text/css" media="all" />
+        <!-- nice select css -->
+        <link rel="stylesheet" href=@Url.Content("/Content/assets/css/nice-select.css") type="text/css") media="all" />
+        <!-- style css -->
+        <link rel="stylesheet" href=@Url.Content("/Content/assets/css/style.css") type="text/css") media="all" />
+        <!-- responsive css -->
+        <link rel="stylesheet" href=@Url.Content("/Content/assets/css/responsive.css") type="text/css" media="all" />
+        <!--[if IE]>
+            <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+    </head>
+
+    <body>
+        <!-- Preloader -->
+        <div class="preloader">
+            <div class="preloader-wrapper">
+                <div class="preloader-content">
+                    <div class="blob-1"></div>
+	                <div class="blob-2"></div>
+                </div>
+            </div>
+        </div>
+        <!-- Preloader -->
+        <!-- Navbar -->
+        <div class="fixed-top bg-white">
+            <div class="topbar">
+                <div class="container">
+                    <div class="topbar-inner">
+                        <div class="row justify-content-center justify-content-lg-between">
+                            <div class="topbar-item topbar-left">
+                                <ul class="topbar-list">
+                                    <li>
+                                        <i class="icofont-headphone"></i>
+                                        <a href="tel:00321-654-98">+00 321 654 98</a>
+                                    </li>
+                                    <li>
+                                        <i class="icofont-ui-message"></i>
+                                        <a href="mailto:info@erudex.com">info@erudex.com</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="topbar-item topbar-right">
+                                <ul class="topbar-list">
+                                    <li>
+                                        <i class="icofont-paper-plane"></i>
+                                        <a href='@Url.Action("Contact","Contact")'>Request For Demo</a>
+                                    </li>
+                                    <li class="search-option">
+                                        <i class="icofont-search-1"></i>
+                                        <a href="#" class="search-popup">Search</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="navbar-area sticky-black">
+                <div class="container">
+                    <div class="mobile-nav">
+                        <a href='@Url.Action("HomePage","HomePage")' class="mobile-brand">
+                            <img src=@Url.Content("/Content/assets/images/logo.png") alt="logo" class="logo">
+                        </a>
+                        <div class="navbar-option">
+                            <div class="navbar-option-item">
+                                <button type="button">
+                                    <i class="flaticon-user" ></i>
+                                </button>
+                            </div>
+                            <div class="navbar-option-item side-topbar-option">
+                                <button type="button">
+                                    <i class="flaticon-grid" ></i>
+                                </button>
+                            </div>
+                            <div class="navbar-option-item">
+                                <button type="button" class="search-option">
+                                    <i class="icofont-search-1"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="main-nav">
+                    <div class="container">
+                        <nav class="navbar navbar-expand-md navbar-light">
+                            <a class="navbar-brand" href='@Url.Action("HomePage","HomePage")'>
+                                <img src=@Url.Content("/Content/assets/images/logo.png") alt="logo" class="logo">
+                            </a>
+                            <div class="collapse navbar-collapse mean-menu" id="navbarSupportedContent">
+                                <ul class="navbar-nav mx-auto">
+                                    <li class="nav-item  nav-item-1">
+                                                <a href='@Url.Action("HomePage","HomePage")' class="nav-link">Home</a>
+                                            </li>
+                                           
+                                        
+                                   
+                                    <li class="nav-item">
+                                        <a href='@Url.Action("AboutUs","AboutUs")' class="nav-link ">About Us</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#" class="nav-link dropdown-toggle">Services</a>
+                                        <ul class="dropdown-menu">
+                                           <li class="nav-item">
+                                                <a href='@Url.Action("Services","Service")' class="nav-link">Services</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a href='@Url.Action("SingleServices","Service")' class="nav-link">Single Service</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#" class="nav-link dropdown-toggle active">Pages</a>
+                                        <ul class="dropdown-menu">
+                                            <li class="nav-item">
+                                                <a href='@Url.Action("Pricing","Pages")' class="nav-link">Pricing</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a href='@Url.Action("FAQ","Pages")' class="nav-link active">FAQ's</a>
+                                            </li>
+                                           <li class="nav-item">
+                                                <a href='@Url.Action("OurTeam","Pages")' class="nav-link ">Our Team</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a href="#" class="nav-link dropdown-toggle">Projects</a>
+                                                <ul class="dropdown-menu">
+                                                    <li class="nav-item">
+                                                        <a href='@Url.Action("Projects","Pages")' class="nav-link active">Projects</a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a href='@Url.Action("SingleProjects","Pages")' class="nav-link">Single Project</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a href="#" class="nav-link dropdown-toggle">Case Study</a>
+                                                <ul class="dropdown-menu">
+                                                    <li class="nav-item">
+                                                        <a href='@Url.Action("CaseStudy","Pages")' class="nav-link">Case</a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a href='@Url.Action("CaseTwoColumns","Pages")' class="nav-link">Cases Two Columns</a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a href='@Url.Action("SingleCase","Pages")' class="nav-link">Single Case</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a href='@Url.Action("Testimonial","Pages")' class="nav-link">Testimonial</a>
+                                            </li>
+                                             <li class="nav-item">
+                                                <a href='@Url.Action("OurClients","Pages")' class="nav-link ">Our Clients</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                        <a href='@Url.Action("Products","Pages")' class="nav-link">Products</a>
+                                                    </li>
+                                            <li class="nav-item">
+                                                <a href="#" class="nav-link dropdown-toggle">Products</a>
+                                                <ul class="dropdown-menu">
+                                                     <li class="nav-item">
+                                                        <a href='@Url.Action("Products","Pages")' class="nav-link ">Products</a>
+                                                    </li>
+                                                     <li class="nav-item">
+                                                        <a href='@Url.Action("SingleProducts","Pages")' class="nav-link ">Single Products</a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a href='@Url.Action("Cart","Pages")' class="nav-link">Cart</a>
+                                                    </li>
+                                                   <li class="nav-item">
+                                                        <a href='@Url.Action("Checkout","Pages")' class="nav-link">Checkout</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a href="#" class="nav-link dropdown-toggle">Users</a>
+                                                <ul class="dropdown-menu">
+                                                     <li class="nav-item">
+                                                        <a href='@Url.Action("Authentication","Pages")' class="nav-link">Authentication</a>
+                                                    </li>
+                                                   <li class="nav-item">
+                                                        <a href='@Url.Action("ForgotPassword","Pages")' class="nav-link active">Forget Password</a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a href='@Url.Action("MyAccount","Pages")' class="nav-link">My Account</a>
+                                                    </li>
+                                                     <li class="nav-item">
+                                                        <a href='@Url.Action("MyOrders","Pages")' class="nav-link">My Orders</a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a href='@Url.Action("MyAddresses","Pages")' class="nav-link">My Addresses</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a href="#" class="nav-link dropdown-toggle">Others</a>
+                                                <ul class="dropdown-menu">
+                                                     <li class="nav-item">
+                                                        <a href='@Url.Action("DemoProducts","Pages")' class="nav-link">Demo Product</a>
+                                                    </li>
+                                                     <li class="nav-item">
+                                                        <a href='@Url.Action("Feedback","Pages")' class="nav-link">Feedback</a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a href='@Url.Action("Termofservice","Pages")' class="nav-link">Terms Of Service</a>
+                                                    </li>
+                                                     <li class="nav-item">
+                                                        <a href='@Url.Action("PrivicyPolicy","Pages")' class="nav-link">Privacy Policy</a>
+                                                    </li>
+                                                   <li class="nav-item">
+                                                        <a href='@Url.Action("SearchPage","Pages")' class="nav-link">Search Page</a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a href='@Url.Action("Error404","Pages")' class="nav-link ">404 Error Page</a>
+                                                    </li>
+                                                     <li class="nav-item">
+                                                        <a href='@Url.Action("ComingSoon","Pages")' class="nav-link">Coming Soon</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#" class="nav-link dropdown-toggle">Blogs</a>
+                                        <ul class="dropdown-menu">
+                                             <li class="nav-item">
+                                                <a href='@Url.Action("blogswithoutrightsidebar","Blogs")' class="nav-link">Blogs Grid</a>
+                                            </li>
+  <li class="nav-item">
+                                                <a href='@Url.Action("blogsrightsidebar","Blogs")' class="nav-link">Blogs Right Sidebar</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a href='@Url.Action("SingleBlog","Blogs")' class="nav-link">Single Blog</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item">
+                                       <a href='@Url.Action("Contact","Contact")' class="nav-link">Contact</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="navbar-option">
+                                <div class="navbar-option-item">
+                                    <a href='@Url.Action("Authentication","Pages")' class="btn main-btn">Login Or Register</a>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Navbar -->
+        <!-- Header -->
+        <header class="inner-page-header">
+            <div class="container">
+                <div class="inner-header-content">
+                    <h1>FAQ's</h1>
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                          <li class="breadcrumb-item"><a href='@Url.Action("HomePage","HomePage")'>Home</a></li>
+                          <li class="breadcrumb-item active" aria-current="page">FAQ's</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <!-- Header -->
+        <!-- Faq-section -->
+        <section class="faq-section pt-100 pb-70">
+            <div class="container">
+                <div class="accordion" id="accordionParent">
+                    <div class="row">
+                        <div class="col-lg-6 pb-30">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingOne">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">How To Successful Our Business Plan?</button>
+                                </h2>
+                                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionParent">
+                                    <div class="accordion-body">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tutip tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At veropi eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea tak imata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, conse tetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingTwo">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">Clients Satisfaction Make Company Value</button>
+                                </h2>
+                                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionParent">
+                                    <div class="accordion-body">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tutip tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At veropi eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea tak imata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, conse tetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et.</div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingThree">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">World Class Creative Firm</button>
+                                </h2>
+                                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionParent">
+                                    <div class="accordion-body">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tutip tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At veropi eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea tak imata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, conse tetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et.</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 pb-30">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingSix">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="true" aria-controls="collapseSix">Research Is What Makes An Effective Business Plan? </button>
+                                </h2>
+                                <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordionParent">
+                                    <div class="accordion-body">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tutip tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At veropi eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea tak imata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, conse tetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et.</div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingSeven">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="true" aria-controls="collapseSeven">How Achieving Small Business Success?</button>
+                                </h2>
+                                <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven" data-bs-parent="#accordionParent">
+                                    <div class="accordion-body">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tutip tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At veropi eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea tak imata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, conse tetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et.</div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingEight">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="true" aria-controls="collapseEight">Why Business Planing Is Important?</button>
+                                </h2>
+                                <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingEight" data-bs-parent="#accordionParent">
+                                    <div class="accordion-body">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tutip tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At veropi eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea tak imata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, conse tetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et.</div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingNine">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNine" aria-expanded="true" aria-controls="collapseNine">What Are The Business Advisory Company?</button>
+                                </h2>
+                                <div id="collapseNine" class="accordion-collapse collapse" aria-labelledby="headingNine" data-bs-parent="#accordionParent">
+                                    <div class="accordion-body">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tutip tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At veropi eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea tak imata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, conse tetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et.</div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingTen">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTen" aria-expanded="true" aria-controls="collapseTen">How Do You Startup?</button>
+                                </h2>
+                                <div id="collapseTen" class="accordion-collapse collapse" aria-labelledby="headingTen" data-bs-parent="#accordionParent">
+                                    <div class="accordion-body">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tutip tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At veropi eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea tak imata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, conse tetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et.</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Faq-section -->
+        <!-- Contact-form-section -->
+        <section class="contact-form-section pb-100">
+            <div class="container">
+                <!-- Contact-form-box -->
+                <div class="contact-form-box">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="contact-map contact-form-item">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387193.305935303!2d-74.25986548248684!3d40.69714941932609!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2sbd!4v1611822084496!5m2!1sen!2sbd"></iframe>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="contact-form-item desk-pad-left-40">
+                                <div class="section-title text-start section-title-left">
+                                    <h2>Ask Question</h2>
+                                    <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit</p>
+                                </div>
+                               <form class="contact-form" method="post" action="FAQ">
+                                    <div class="form-group mb-20">
+                                        <input type="text" name="name" id="name" class="form-control" placeholder="Your Name*" required data-error="Please enter your name" />
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                    <div class="form-group mb-20">
+                                        <input type="text" name="email" id="email" class="form-control" placeholder="Your Email*" required data-error="Please enter your email" />
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                    <div class="form-group mb-20">
+                                        <input type="text" name="contact" id="phone" class="form-control" placeholder="Your Phone*" required data-error="Please enter your phone number" />
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                    <div class="form-group mb-20">
+                                        <input type="text" name="subject" id="subject" class="form-control" placeholder="Your Subject*" required data-error="Please enter your subject" />
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                    <div class="form-group mb-20">
+                                        <textarea name="message" class="form-control" id="message" rows="3" placeholder="Your Question*"></textarea>
+                                    </div>
+                                    <div class="input-checkbox mb-20">
+                                        <input type="checkbox" id="contact1">
+                                        <label for="contact1">Accept <a href='@Url.Action("Termofservice","Pages")'>Terms of Service</a> and <a href='@Url.Action("PrivicyPolicy","Pages")'>Privacy Policy</a></label>
+                                    </div>
+                                    <div class="form-button">
+                                        <button class="btn main-btn full-width" type="submit">Send A Question</button>
+                                        <div id="msgSubmit"></div>
+                                        <div class="clearfix"></div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Contact-form-box -->
+            </div>
+        </section>
+        <!-- Contact-form-section -->
+        <!-- Newsletter-section -->
+        <section class="newsletter-section pt-min-100 pb-100 page-bg page-bg-2 page-bg-overlay">
+            <div class="container position-relative">
+                <div class="section-title section-title-white">
+                    <h2>Subscribe For Newsletter</h2>
+                    <p>Subscribe to our newsletter & stay updated</p>
+                </div>
+                <form class="newsletter-form">
+                    <div class="form-group m-0 newsletter-form">
+                        <input type="text" name="EMAIL" id="emails" class="form-control" placeholder="Enter Address*" required>
+                        <button class="btn main-btn" type="submit">Subscribe</button>
+                    </div>
+                    <div id="validator-newsletter" class="form-result"></div>
+                </form>
+            </div>
+        </section>
+        <!-- Newsletter-section -->
+        <!-- Footer -->
+        <footer class="bg-off-white footer">
+            <div class="footer-shapes">
+                <div class="footer-shape">
+                    <img src=@Url.Content("/Content/assets/images/shape-1.png") alt="shape">
+                </div>
+                <div class="footer-shape footer-round-shape">
+                    <img src=@Url.Content("/Content/assets/images/shape-2.png") alt="shape">
+                </div>
+            </div>
+                       <div class="footer-upper pt-100 pb-80 position-relative">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-12 col-md-6 col-lg-3">
+                            <div class="footer-content-item">
+                                <div class="footer-logo">
+                                    <a href='@Url.Action("HomePage","HomePage")'><img src=@Url.Content("/Content/assets/images/logo.png") alt="logo"></a>
+                                </div>
+                                <div class="footer-details">
+                                    <p>Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate.</p>
+                                    <ul class="social-list social-list-btn">
+                                        <li>
+                                            <a href="https://www.facebook.com/" target="_blank"><i class="icofont-facebook"></i></a>
+                                        </li>
+                                        <li>
+                                            <a href="https://twitter.com/" target="_blank"><i class="icofont-twitter"></i></a>
+                                        </li>
+                                        <li>
+                                            <a href="https://www.instagram.com/" target="_blank"><i class="icofont-instagram"></i></a>
+                                        </li>
+                                        <li>
+                                            <a href="https://www.pinterest.com/" target="_blank"><i class="icofont-pinterest"></i></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-6 col-lg-3">
+                            <div class="footer-content-list footer-content-item desk-pad-left-70">
+                                <div class="footer-content-title">
+                                    <h3>Useful Links</h3>
+                                </div>
+                                <ul class="footer-details footer-list">
+                                    <li><a href='@Url.Action("AboutUs","AboutUs")'>About Us</a></li>
+                                    <li><a href='@Url.Action("blogsrightsidebar","Blogs")'>News & Blogs</a></li>
+                                    <li><a href='@Url.Action("Services","Service")'>Services</a></li>
+                                    <li><a href='@Url.Action("Products","Pages")'>Products</a></li>
+                                    <li><a href='@Url.Action("Pricing","Pages")'>Our Pricing</a></li>
+                                    <li><a href='@Url.Action("Contact","Contact")'>Contact</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-6 col-lg-3">
+                            <div class="footer-content-list footer-content-item desk-pad-left-70">
+                                <div class="footer-content-title">
+                                    <h3>Services</h3>
+                                </div>
+                                <ul class="footer-details footer-list">
+                                    <li><a href='@Url.Action("SingleServices","Service")'>Robotic Automation</a></li>
+                                    <li><a href='@Url.Action("SingleServices","Service")'>Predictive Analytic</a></li>
+                                    <li><a href='@Url.Action("SingleServices","Service")'>Deep Learning</a></li>
+                                    <li><a href='@Url.Action("SingleServices","Service")'>Statistic Modeling</a></li>
+                                    <li><a href='@Url.Action("SingleServices","Service")'>Data Mining</a></li>
+                                    <li><a href='@Url.Action("SingleServices","Service")'>Security & Surveillance</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-6 col-lg-3">
+                            <div class="footer-content-list footer-content-item desk-pad-left-70">
+                                <div class="footer-content-title">
+                                    <h3>Contact</h3>
+                                </div>
+                                <div class="footer-details footer-address">
+                                    <div class="footer-address-item">
+                                        <div class="footer-address-text">
+                                            <h4>Phone:</h4>
+                                            <p><a href="tel:001-987-654-432">(+1) 987 654 432</a></p>
+                                        </div>
+                                    </div>
+                                    <div class="footer-address-item">
+                                        <div class="footer-address-text">
+                                            <h4>Email:</h4>
+                                            <p><a href="mailto:info@erudex.com">info@erudex.com</a></p>
+                                        </div>
+                                    </div>
+                                    <div class="footer-address-item">
+                                        <div class="footer-address-text">
+                                            <h4>Address:</h4>
+                                            <p>214, Queens 4th cross, NY</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-lower bg-blue position-relative">
+                <div class="container">
+                    <div class="footer-copyright-text footer-copyright-text-white">
+                        <p>Copyright ©2021 Erudex. Designed & Developed By <a href="https://envytheme.com/" target="_blank">EnvyTheme</a></p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Footer -->
+
+        <!-- Scroll-top -->
+        <div class="scroll-top" id="scrolltop">
+            <div class="scroll-top-inner">
+                <i class="icofont-long-arrow-up"></i>
+            </div>
+        </div>
+        <!-- Scroll-top -->
+
+        <!-- Topbar-side-modal -->
+        <div class="side-modal-wrapper">
+            <div class="side-modal">
+                <div class="side-modal-header">
+                    <div class="side-modal-logo">
+                        <a href="index.html"><img src=@Url.Content("/Content/assets/images/logo.png") alt="logo"></a>
+                    </div>
+                    <div class="side-modal-close">
+                        <i class="icofont-close"></i>
+                    </div>
+                </div>
+                <div class="side-modal-body">
+                    <div class="sidebar-info-content">
+                        <h3>Contact Us</h3>
+                        <div class="sidebar-info-list">
+                            <div class="sidebar-info-list-item">
+                                <i class="icofont-headphone"></i>
+                                <a href="tel:00321-654-98">+00 321 654 98</a>
+                            </div>
+                            <div class="sidebar-info-list-item">
+                                <i class="icofont-ui-message"></i>
+                                <a href="mailto:info@erudex.com">info@erudex.com</a>
+                            </div>
+                            <div class="sidebar-info-list-item">
+                                <i class="icofont-paper-plane"></i>
+                                <a href="contact.html">Request For Demo</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sidebar-info-content">
+                        <h3>Follow Us</h3>
+                        <ul class="social-list">
+                            <li>
+                                <a href="https://www.facebook.com/" target="_blank"><i class="icofont-facebook"></i></a>
+                            </li>
+                            <li>
+                                <a href="https://twitter.com/" target="_blank"><i class="icofont-twitter"></i></a>
+                            </li>
+                            <li>
+                                <a href="https://www.instagram.com/" target="_blank"><i class="icofont-instagram"></i></a>
+                            </li>
+                            <li>
+                                <a href="https://www.pinterest.com/" target="_blank"><i class="icofont-pinterest"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Topbar-side-modal -->
+
+        <!-- Search-overlay -->
+        <div class="search-overlay">
+            <div class="search-close">
+                <i class="icofont-close"></i>
+            </div>
+            <div class="search-form-area">
+                <div class="search-area-logo">
+                    <a href="index.html">
+                        <img src=@Url.Content("/Content/assets/images/logo-white.png") alt="logo">
+                    </a>
+                </div>
+                <form>
+                    <div class="form-group search-form-group">
+                        <input type="text" placeholder="Search..." class="form-control" autofocus="autofocus">
+                        <button>
+                            <i class="icofont-search-1"></i>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <!-- Search-overlay -->
+
+
+        <!-- essential js -->
+        <script src=@Url.Content("/Content/assets/js/jquery.min.js")></script>
+        <script src=@Url.Content("/Content/assets/js/bootstrap.bundle.min.js")></script>
+        <!-- magnific popup js -->
+        <script src=@Url.Content("/Content/assets/js/jquery.magnific-popup.min.js")></script>
+        <!-- owl carousel js -->
+        <script src=@Url.Content("/Content/assets/js/owl.carousel.min.js")></script>
+        <!-- nice select js -->
+        <script src=@Url.Content("/Content/assets/js/jquery.nice-select.min.js")></script>
+        <!-- form ajazchimp js -->
+        <script src=@Url.Content("/Content/assets/js/jquery.ajaxchimp.min.js")></script>
+        <!-- form validator js  -->
+        <script src=@Url.Content("/Content/assets/js/form-validator.min.js")></script>
+        <!-- contact form js -->
+        <script src=@Url.Content("/Content/assets/js/contact-form-script.js")></script>
+        <!-- meanmenu js -->
+        <script src=@Url.Content("/Content/assets/js/jquery.meanmenu.min.js")></script>
+        <!-- main js -->
+        <script src=@Url.Content("/Content/assets/js/script.js")></script>
+    </body>
+</html>
